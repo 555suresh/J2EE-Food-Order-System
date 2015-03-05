@@ -50,40 +50,41 @@
 
         <div class="row">
 
-            <!--register model-->           
+            <!--register model-->     
+            
             <div class="col-lg-6 col-sm-6" style="float: left">
                 <h4 class="cntr">Register here</h4><hr>
-                <form class="form-horizontal">
+                <form class="form-horizontal" action="userServlet" method="POST">
                     <div class="control-group">
                         <label class="control-label" for="fistName">First name</label>
                         <div class="controls">
-                            <input class="element input-xlarge" type="text" id="fistName" placeholder="First name">
+                            <input class="element input-xlarge" type="text" name="cusfname" placeholder="First name">
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="fistName">Last name</label>
                         <div class="controls">
-                            <input class="element input-xlarge" type="text" id="lastName" placeholder="Last name">
+                            <input class="element input-xlarge" type="text" name="cuslname" placeholder="Last name">
                         </div>
                     </div>
                     
                      <div class="control-group">
                         <label class="control-label" for="fistName">Address</label>
                         <div class="controls">
-                            <textarea class="element input-xlarge" type="text" id="address" placeholder="Address"></textarea>
+                            <textarea class="element input-xlarge" type="text" name="cusaddr" placeholder="Address" /></textarea>
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="LastName">Telephone</label>
                         <div class="controls">
-                            <input class="element input-xlarge" type="text" id="LastName" placeholder="Telophone">
+                            <input class="element input-xlarge" type="text" maxlength="10" name="custel" placeholder="Telophone">
                         </div>
                     </div>
 
                     <div class="control-group">
                         <label class="control-label" for="email">Email</label>
                         <div class="controls">
-                            <input class="element input-xlarge" type="text" id="Email" placeholder="Email">
+                            <input class="element input-xlarge" type="text" name="email" placeholder="Email">
                         </div>
                     </div>
 
@@ -91,20 +92,20 @@
                     <div class="control-group">
                         <label class="control-label" for="inputPassword">Password</label>
                         <div class="controls">
-                            <input class="element input-xlarge" type="password" id="inputPassword" placeholder="Password">
+                            <input class="element input-xlarge" type="password"  placeholder="Password">
                         </div>
                     </div>
 
                     <div class="control-group">
-                        <label class="control-label" for="inputPassword">Renter password</label>
+                        <label class="control-label" for="inputPassword">Re-enter Password</label>
                         <div class="controls">
-                            <input class="element input-xlarge" type="password" id="inputPassword" placeholder="RenterPassword">
+                            <input class="element input-xlarge" type="password" name="Password" placeholder="RenterPassword">
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="controls">
                             <label class="checkbox">
-                                <input type="checkbox"> Agree teem's condition
+                                <input type="checkbox"> Agree term's condition
                             </label>
                             <button  type="submit" class="btn btn-info input-large">Sign in </button>
                             <button  type="reset" class="btn btn-inverse">Cansel </button>
@@ -112,20 +113,22 @@
                     </div>
                 </form>
             </div>
+            
             <!--login moodel-->
+            
             <div class="col-lg-6 col-sm-6" style="float: left">
                 <h4 class="cntr">Login here</h4><hr>
-                <form class="form-horizontal">
+                <form class="form-horizontal" method="POST" action="loginServlet">
                     <div class="control-group">
                         <label class="control-label" for="inputEmail">Email</label>
                         <div class="controls">
-                            <input class="element input-xlarge" type="text" id="inputEmail" placeholder="Email">
+                            <input class="element input-xlarge" type="text" name="email" placeholder="Email">
                         </div>
                     </div>
                     <div class="control-group">
                         <label class="control-label" for="inputPassword">Password</label>
                         <div class="controls">
-                            <input class="element input-xlarge" type="password" id="inputPassword" placeholder="Password">
+                            <input class="element input-xlarge" type="password" name="pass" placeholder="Password">
                             <p>forgot password</p>
                         </div>
 
@@ -134,10 +137,10 @@
                     <div class="control-group ">
                         <div class="controls">
                             <label class="checkbox">
-                                <input type="checkbox"><p>Remember me</p>
-                            </label>
+                                <input type="checkbox" name="remember"><p>Remember me</p>                             
+                            </label>                            
                             <button  type="submit" class="btn btn-info input-large">Sign in </button>
-                            <button  type="reset" class="btn btn-inverse">Cansel </button>
+                            <button  type="reset" class="btn btn-inverse">Cancel </button>
                         </div>
                     </div>
                     <!-- <div class="span4 cntr"><img src="themes/images/beforeFooter/bf3.png" style=" width: 370px;height: 150px;"></div>-->
