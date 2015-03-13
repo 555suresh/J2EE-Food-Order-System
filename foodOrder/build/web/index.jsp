@@ -13,7 +13,7 @@
 
     <style>
 
-        body{background-image: url(back5.jpg); 
+        body{background-image: url(); 
                 background-size: 4000px;
 
         }

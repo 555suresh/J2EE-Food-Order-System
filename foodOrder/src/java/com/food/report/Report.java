@@ -5,7 +5,7 @@
  */
 package com.food.report;
 
-import com.food.managecls.DBConn;
+import com.food.connection.DBConn;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;

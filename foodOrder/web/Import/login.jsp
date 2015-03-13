@@ -9,7 +9,7 @@
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<script src="../themes/js/bootstrapValidator.js"></script>
 <style>
     .modal {
         position: fixed;
@@ -54,7 +54,7 @@
             
             <div class="col-lg-6 col-sm-6" style="float: left">
                 <h4 class="cntr">Register here</h4><hr>
-                <form class="form-horizontal" action="userServlet" method="POST">
+                <form id="defaultForm" class="form-horizontal" action="userServlet" method="POST">
                     <div class="control-group">
                         <label class="control-label" for="fistName">First name</label>
                         <div class="controls">

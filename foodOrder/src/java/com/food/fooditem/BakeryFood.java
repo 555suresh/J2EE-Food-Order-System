@@ -7,7 +7,7 @@ package com.food.fooditem;
 
 import java.sql.PreparedStatement;
 import java.util.ArrayList;
-import com.food.managecls.DBConn;
+import com.food.connection.DBConn;
 
 import java.io.*;
 import java.sql.ResultSet;

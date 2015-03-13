@@ -19,14 +19,11 @@
 
 #headerSection:hover {
     background:none!important;
-    border-bottom: 0px solid #DEDEDE;
-    padding:8px 50px 0px;
-    font-size:  30px;
-    
+    border-bottom: 0px solid #DEDEDE;  
 }
-li a:hover{
-    font-size: 20px;
+li a:hover{   
  color: #000;
+ border-bottom: 2px solid red;
 }
 </style>
 <div id="headerSection">

@@ -12,7 +12,7 @@
         <title>my res</title>
         <%@include  file="Import/head.jsp" %>
         <style>
-            body{background-image: url(back5.jpg); 
+            body{background-image: url(); 
                  background-size: 2500px;}
 
             .element {
